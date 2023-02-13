@@ -1,13 +1,10 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
 
 
 export function LeaveReview(props) {
 
     const movieTitle = useRef();
-    const releaseDate = useRef();
-    const actors = useRef();
-    const moviePoster = useRef();
-    const rating = useRef();
 
     const submit = (event) => {
 
@@ -26,16 +23,16 @@ export function LeaveReview(props) {
     }
 
     return (
-
+        <>
+        <Link to="/">Home</Link>
         <form onSubmit={submit}>
-    
-        Movie Title
-        <input
-        ref = {movieTitle}
-        type = "text" /><br></br>
-        <button>ADD</button>
-    </form>
-
+            Movie Title
+            <input
+            ref = {movieTitle}
+            type = "text" /><br></br>
+            <button>ADD</button>
+        </form>
+        </>
     )
 
 };
