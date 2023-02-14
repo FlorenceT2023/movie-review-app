@@ -25,7 +25,7 @@ export function LeaveReview(props) {
     return (
         <>
         <form onSubmit={submit}>
-            Movie Title
+            <label> Movie Title </label>
             <input
             ref = {movieTitle}
             type = "text" /><br></br>

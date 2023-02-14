@@ -1,16 +1,19 @@
 import '../App.css'
-import { useState, useEffect, useReducer } from "react";
+import { useState, useEffect } from "react";
 import { Routes, Route } from 'react-router-dom';
 import { LeaveReview } from './Form';
 
 function MovieList(props) {
   return (
     <>
-    <ul>
+    <h2>Movie List</h2>
+    <div className="movielist">
       {
-        props.fav_movies.map(movie => <li>{movie.title}</li>)
+        props.fav_movies.map(movie => <li> <img className="photo" src={movie.image} /><br />Title: {movie.title}
+        <br />Release Date: {movie.release_date}<br />Rating: {movie.rating}/5
+        </li>)
       }
-    </ul>
+    </div>
     </>
   )
 }

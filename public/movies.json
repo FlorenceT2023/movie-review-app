@@ -1,30 +1,30 @@
 [
     {
         "title": "Terminator 2",
-        "release date" : "1991-07-01",
+        "release_date" : "1991-07-01",
         "actors": "Arnold Schwarzenegger, Linda Hamilton", 
         "image" : "/images/terminator2.jpg",
         "rating": 4
     },
     {
         "title": "Office Space",
-        "release date" : "1999-02-19",
+        "release_date" : "1999-02-19",
         "actors": "Ron Livingston, Jennifer Aniston", 
-        "image" : "/images/office_space.jpg",
+        "image" : "images/office_space.jpg",
         "rating": 5
     },
     {
         "title": "Grand Budapest Hotel",
-        "release date" : "2014-02-06",
+        "release_date" : "2014-02-06",
         "actors": "Ralph Fiennes, Willem Dafoe", 
-        "image" : "/images/grand_budapest_hotel.jpg",
+        "image" : "images/grand_budapest_hotel.jpg",
         "rating": 3
     },
     {
         "title": "Turning Red",
-        "release date" : "2022-03-01",
+        "release_date" : "2022-03-01",
         "actors": "Rosalie Chiang, Sandra Oh", 
-        "image" : "/images/turning_red.jpg",
+        "image" : "images/turning_red.jpg",
         "rating": 4
     }
 ]
