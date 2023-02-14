@@ -24,7 +24,6 @@ export function LeaveReview(props) {
 
     return (
         <>
-        <Link to="/">Home</Link>
         <form onSubmit={submit}>
             Movie Title
             <input
