@@ -6,11 +6,12 @@ import { LeaveReview } from './Form';
 function MovieList(props) {
   return (
     <>
-    <h2>Movie List</h2>
-    <div className="movielist">
+    <div align="center" className="movielist">
       {
-        props.fav_movies.map(movie => <li> <img className="photo" src={movie.image} /><br />Title: {movie.title}
-        <br />Release Date: {movie.release_date}<br />Rating: {movie.rating}/5
+        props.fav_movies.map(movie => <li><img className="photo" src={movie.image} />
+        <br />Title: {movie.title}
+        <br />Release Date: {movie.release_date}
+        <br />Rating: {movie.rating}<br /><br />
         </li>)
       }
     </div>

@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "title": "Terminator 2",
         "release_date" : "1991-07-01",
         "actors": "Arnold Schwarzenegger, Linda Hamilton", 
@@ -7,6 +8,7 @@
         "rating": 4
     },
     {
+        "id": 2,
         "title": "Office Space",
         "release_date" : "1999-02-19",
         "actors": "Ron Livingston, Jennifer Aniston", 
@@ -14,6 +16,7 @@
         "rating": 5
     },
     {
+        "id": 3,
         "title": "Grand Budapest Hotel",
         "release_date" : "2014-02-06",
         "actors": "Ralph Fiennes, Willem Dafoe", 
@@ -21,6 +24,7 @@
         "rating": 3
     },
     {
+        "id": 4,
         "title": "Turning Red",
         "release_date" : "2022-03-01",
         "actors": "Rosalie Chiang, Sandra Oh", 
