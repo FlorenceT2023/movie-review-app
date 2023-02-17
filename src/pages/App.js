@@ -3,10 +3,11 @@ import { useState, useEffect } from "react";
 import { Routes, Route } from 'react-router-dom';
 import { LeaveReview } from './Form';
 
-function MovieList(props) {
+function MovieList(props) { 
   return (
     <>
-    <div align="center" className="movielist">
+    <h2> Movie Ratings </h2>
+    <div align = "center" className="movielist">
       {
         props.fav_movies.map(movie => <li><img className="photo" src={movie.image} />
         <br />Title: {movie.title}

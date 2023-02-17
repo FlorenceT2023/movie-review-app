@@ -13,13 +13,20 @@
   }
 }
 
+h2{
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 5px;
+}
+
 div {
-  padding-top: 50px;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 
 form {
-  padding-top: 70px;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 label {
@@ -38,7 +45,6 @@ input {
 }
 
 select { 
-  background-image:url(./popcorn.png);
   height: 20px;
   justify-content: center;
   flex: 0 0 200px;
@@ -51,7 +57,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background: white;
+  background: rgb(221, 192, 255);
 }
 
 nav ul {
