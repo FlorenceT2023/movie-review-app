@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useRef } from 'react';
 
 
 export function LeaveReview(props) {
@@ -10,8 +9,6 @@ export function LeaveReview(props) {
     const moviePoster = useRef();
     const movieRating = useRef();
     
-
-
     const submit = (event) => {
 
         event.preventDefault();
@@ -20,15 +17,17 @@ export function LeaveReview(props) {
             movieData.push(movie);
         })
 
+        const id = props.movies.length + 1;
         const title = movieTitle.current.value;
         const releaseDate = movieReleaseDate.current.value;
         const actors = movieActors.current.value;
         const poster = moviePoster.current.value;
         const rating = movieRating.current.value;
-        movieData.push({"title": title, "release_date": releaseDate, "actors": actors, "image": poster, "rating": rating});
+        
+        movieData.push({"id": id, "title": title, "release_date": releaseDate, "actors": actors, "image": poster, "rating": rating});
         props.setMovies(movieData);
 
-        alert(title);
+        alert(`${title} has been added!`);
         movieTitle.current.value = "";
         movieReleaseDate.current.value = "";
         movieActors.current.value = "";

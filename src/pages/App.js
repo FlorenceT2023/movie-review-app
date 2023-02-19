@@ -1,24 +1,10 @@
 import '../App.css'
-import { useState, useEffect } from "react";
+import { useState, useEffect} from "react";
 import { Routes, Route } from 'react-router-dom';
 import { LeaveReview } from './Form';
+import MovieList from './Home';
 
-function MovieList(props) { 
-  return (
-    <>
-    <h2> Movie Ratings </h2>
-    <div align = "center" className="movielist">
-      {
-        props.fav_movies.map(movie => <li><img className="photo" src={movie.image} />
-        <br />Title: {movie.title}
-        <br />Release Date: {movie.release_date}
-        <br />Rating: {movie.rating}<br /><br />
-        </li>)
-      }
-    </div>
-    </>
-  )
-}
+
 
 function App() {
 
@@ -34,9 +20,10 @@ function App() {
   if( movies == null) {
     return <h1>Loading...</h1>;
   }
-  console.log(movies);
+  // console.log(movies);
   
   return (
+    // directs user to appropriate pages
     <Routes>
       <Route path="/" element={<MovieList fav_movies={(movies)} />} />
       <Route path="/review" element={<LeaveReview movies={movies} setMovies={setMovies} />} />
@@ -46,3 +33,4 @@ function App() {
 }
 
 export default App;
+
