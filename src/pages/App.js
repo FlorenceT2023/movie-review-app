@@ -10,14 +10,14 @@ function App() {
   let [movies, setMovies] = useState(null);
 
   useEffect( () => {
-    fetch("../movies.json")
+    fetch("/movies")
     .then( response => response.json() )
     .then( setMovies )
     .catch( e => console.log(e.message))
   }, [])
 
   if( movies == null) {
-    return <h1>Loading...</h1>;
+    return <center><h1><br /><br /><br /><br />Loading...</h1></center>;
   }
 
   console.log(movies);
