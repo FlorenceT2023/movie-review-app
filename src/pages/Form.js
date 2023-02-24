@@ -35,6 +35,7 @@ export function LeaveReview(props) {
     //     movieRating.current.value = "";
     // }
 
+    
     return (
         <>
         <center>
